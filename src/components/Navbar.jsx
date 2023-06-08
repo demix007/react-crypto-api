@@ -3,6 +3,8 @@ import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
   return (
     <div className="header">
@@ -25,7 +27,9 @@ const Navbar = () => {
             <div className="btn-group">
             <button className="btn">Connect Wallet</button>
             </div>
-
+            <div className="hamburger" onClick={handleClick}>
+                {click ? (<FaTimes size={30} style={{color: "#33"}}/>) : (<FaBars size={30} style={{color: "#33"}} />) }
+            </div>
         </div>
     </div>
   )
