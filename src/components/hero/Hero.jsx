@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
-import CRYPTO from '../assets/hero-img.png';
+import CRYPTO from '../../assets/hero-img.png';
 
-export const Hero = () => (
+const Hero = () => (
   <div className="hero">
     <div className="container">
 
