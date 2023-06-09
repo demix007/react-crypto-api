@@ -19,15 +19,15 @@ const Featured = () => {
   if (!data) return null;
 
   return (
-    <div id="featured" className="featured">
+    <section id="featured" className="featured-section">
       <div className="container">
-        <div className="left">
+        <div className="featured-details-container">
           <h2>Explore top Crypto&apos;s Like Bitcoin, Ethereum, and Dogecoin</h2>
           <p>See all available assets: Cryptocurrencies and NFT&apos;s</p>
           <button className="btn" type="button">See More Coins</button>
         </div>
 
-        <div className="right">
+        <div className="featured-container">
           <div className="card">
             <div className="top">
               <img src={data[0].image} alt="" />
@@ -42,13 +42,13 @@ const Featured = () => {
 
             {data[0].price_change_percentage_24h < 0 ? (
               <span className="red">
-                <FiArrowDown className="icon" />
+                <FiArrowDown className="featured-icon" />
                 {data[0].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
             ) : (
               <span className="green">
-                <FiArrowUpRight className="icon" />
+                <FiArrowUpRight className="featured-icon" />
                 {data[0].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
@@ -68,13 +68,13 @@ const Featured = () => {
 
             {data[1].price_change_percentage_24h < 0 ? (
               <span className="red">
-                <FiArrowDown className="icon" />
+                <FiArrowDown className="featured-icon" />
                 {data[1].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
             ) : (
               <span className="green">
-                <FiArrowUpRight className="icon" />
+                <FiArrowUpRight className="featured-icon" />
                 {data[1].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
@@ -94,13 +94,13 @@ const Featured = () => {
 
             {data[2].price_change_percentage_24h < 0 ? (
               <span className="red">
-                <FiArrowDown className="icon" />
+                <FiArrowDown className="featured-icon" />
                 {data[2].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
             ) : (
               <span className="green">
-                <FiArrowUpRight className="icon" />
+                <FiArrowUpRight className="featured-icon" />
                 {data[2].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
@@ -120,13 +120,13 @@ const Featured = () => {
 
             {data[3].price_change_percentage_24h < 0 ? (
               <span className="red">
-                <FiArrowDown className="icon" />
+                <FiArrowDown className="featured-icon" />
                 {data[3].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
             ) : (
               <span className="green">
-                <FiArrowUpRight className="icon" />
+                <FiArrowUpRight className="featured-icon" />
                 {data[3].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
@@ -146,13 +146,13 @@ const Featured = () => {
 
             {data[0].price_change_percentage_24h < 0 ? (
               <span className="red">
-                <FiArrowDown className="icon" />
+                <FiArrowDown className="featured-icon" />
                 {data[4].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
             ) : (
               <span className="green">
-                <FiArrowUpRight className="icon" />
+                <FiArrowUpRight className="featured-icon" />
                 {data[4].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
@@ -172,13 +172,13 @@ const Featured = () => {
 
             {data[5].price_change_percentage_24h < 0 ? (
               <span className="red">
-                <FiArrowDown className="icon" />
+                <FiArrowDown className="featured-icon" />
                 {data[5].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
             ) : (
               <span className="green">
-                <FiArrowUpRight className="icon" />
+                <FiArrowUpRight className="featured-icon" />
                 {data[5].price_change_percentage_24h.toFixed(2)}
                 %
               </span>
@@ -187,7 +187,7 @@ const Featured = () => {
         </div>
       </div>
 
-    </div>
+    </section>
   );
 };
 

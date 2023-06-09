@@ -14,10 +14,11 @@ const Navbar = () => {
           <span className="primary animated-text">007</span>
         </h1>
         <nav className={click ? 'nav-menu active' : 'nav-menu'}>
-          <a href="#home">Home</a>
-          <a href="#featured">Featured</a>
-          <a href="/">Earn</a>
-          <a href="/">Contact</a>
+          <a href="nil">Home</a>
+          <a href="nil">About</a>
+          <a href="nil">Featured</a>
+          <a href="nil">Earn</a>
+          <a href="nil">Contact</a>
         </nav>
         <div className="btn-group">
           <button className="btn pop-button" type="button">Connect Wallet</button>
