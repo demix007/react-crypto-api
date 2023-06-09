@@ -43,13 +43,13 @@ This is a mobile first web application that displays data of coins in cryptocurr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Live-Demo
-> Here is a link (https://globalcountryfinder.netlify.app/) to the live page.
+> Here is a [Live Demo](https://globalcountryfinder.netlify.app/) link.
 
 # 💻 Getting Started <a name="getting-started"></a>
 > In order to use the project files, Kindly follow these steps:
 
 ## Steps
-- To clone the project select the desired directory in cmd and run: `git clone git@github.com:demix007/global-country-finder.git`
+- To clone the project select the desired directory in cmd and run: `git clone git@github.com:demix007/react-crypto-api.git`
 - Install npm dependencies: `npm install`
 - To check the live preview: `npm run start`
 - For StyLint test, run: `npx stylelint "**/*.{css,scss}`
