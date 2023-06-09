@@ -22,3 +22,9 @@
 .register .right p {
   margin: 2.1rem 0;
 }
+
+@media screen and (max-width:940px) {
+  .register .container {
+    grid-template-columns: 1fr;
+  }
+}
