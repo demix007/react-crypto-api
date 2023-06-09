@@ -1,0 +1,24 @@
+.register .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 3.1rem 1.2rem;
+}
+
+.register .left {
+  text-align: center;
+}
+
+.register img {
+  width: 300px;
+}
+
+.register img:hover {
+  transform: scale(1.2);
+  transition: 0.8s ease-in-out;
+}
+
+.register .right p {
+  margin: 2.1rem 0;
+}
