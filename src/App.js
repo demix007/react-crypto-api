@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Featured from './components/featured/Featured';
 import Register from './components/register/Register';
+import Footer from './components/footer/Footer';
 
 const App = () => (
   <>
@@ -10,6 +11,7 @@ const App = () => (
     <Hero />
     <Featured />
     <Register />
+    <Footer />
   </>
 );
 
