@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import BTC from '../assets/btc-img.png'
 import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi';
 import './Featured.css';
 
@@ -17,26 +16,20 @@ const Featured = () => {
     });
   }, []);
 
-  // console.log(data)
-
   if (!data) return null;
 
   return (
     <div id="featured" className="featured">
       <div className="container">
-        {/* Left */}
         <div className="left">
           <h2>Explore top Crypto&apos;s Like Bitcoin, Ethereum, and Dogecoin</h2>
           <p>See all available assets: Cryptocurrencies and NFT&apos;s</p>
           <button className="btn" type="button">See More Coins</button>
         </div>
 
-        {/* Right */}
-
         <div className="right">
           <div className="card">
             <div className="top">
-              {/* <img src={BTC} alt='/' /> */}
               <img src={data[0].image} alt="" />
             </div>
             <div>
