@@ -13,20 +13,12 @@ const Navbar = () => {
           Demix
           <span className="primary animated-text">007</span>
         </h1>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Featured</a>
-          </li>
-          <li>
-            <a href="/">Earn</a>
-          </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
-        </ul>
+        <nav className={click ? 'nav-menu active' : 'nav-menu'}>
+          <a href="#home">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="/">Earn</a>
+          <a href="/">Contact</a>
+        </nav>
         <div className="btn-group">
           <button className="btn pop-button" type="button">Connect Wallet</button>
         </div>

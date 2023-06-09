@@ -50,14 +50,22 @@
   display: flex;
 }
 
-.nav-menu li {
+.nav-menu a {
   padding: 0 1rem;
 }
 
-.nav-menu a {
+nav a {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #333;
+  color: #000;
+}
+
+nav a:hover {
+  background: green;
+  border: transparent;
+  border-radius: 1rem;
+  transition: 2s;
+  color: #fff;
 }
 
 .hamburger {
@@ -94,7 +102,24 @@
     border-bottom: 1px solid #eee;
   }
 
+  .nav-menu li a {
+    color: red;
+
+  }
+
   .nav-menu a {
     font-size: 1.4rem;
+  }
+
+  @keyframes popAnimation {
+    0% {
+      transform: scale(.5);
+    }
+    50% {
+      transform: scale(.6);
+    }
+    100% {
+      transform: scale(.8);
+    }
   }
 }
