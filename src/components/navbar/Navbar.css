@@ -21,19 +21,22 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
 }
 
 @keyframes textAnimation {
-  0% {color:green;}
-  50% {color:white;}
-  100% {color:green;}
+  0% { color: green; }
+  50% { color: white; }
+  100% { color: green; }
 }
+
 .animated-text {
   animation: textAnimation 3s linear infinite;
 }
@@ -50,14 +53,15 @@
   display: flex;
 }
 
-.nav-menu a {
-  padding: 0 1rem;
-}
-
 nav a {
   font-size: 1.1rem;
   font-weight: 700;
   color: #000;
+}
+
+.nav-menu a {
+  padding: 0 1rem;
+  font-size: 1.4rem;
 }
 
 nav a:hover {
@@ -102,24 +106,17 @@ nav a:hover {
     border-bottom: 1px solid #eee;
   }
 
-  .nav-menu li a {
-    color: red;
-
-  }
-
-  .nav-menu a {
-    font-size: 1.4rem;
-  }
-
   @keyframes popAnimation {
     0% {
-      transform: scale(.5);
+      transform: scale(0.5);
     }
+
     50% {
-      transform: scale(.6);
+      transform: scale(0.6);
     }
+
     100% {
-      transform: scale(.8);
+      transform: scale(0.8);
     }
   }
 }
