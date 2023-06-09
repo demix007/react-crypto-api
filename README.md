@@ -43,7 +43,7 @@ This is a mobile first web application that displays data of coins in cryptocurr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Live-Demo
-> Here is a [Live Demo](https://globalcountryfinder.netlify.app/) link.
+> Here is a [Live Demo](https://react-crypto-api-sand.vercel.app/) link.
 
 # 💻 Getting Started <a name="getting-started"></a>
 > In order to use the project files, Kindly follow these steps:
