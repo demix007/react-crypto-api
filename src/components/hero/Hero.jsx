@@ -3,7 +3,7 @@ import './Hero.css';
 import CRYPTO from '../../assets/hero-img.png';
 
 const Hero = () => (
-  <div className="hero">
+  <div id="home" className="hero">
     <div className="container">
 
       <div className="left">

@@ -17,6 +17,34 @@
   padding: 1rem;
 }
 
+@keyframes popAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textAnimation {
+  0% { color: green; }
+  50% { color: white; }
+  100% { color: green; }
+}
+
+.animated-text {
+  animation: textAnimation 3s linear infinite;
+}
+
+.pop-button {
+  animation: popAnimation 3s ease-in-out infinite;
+}
+
 .colors {
   color: var(--primary-color);
 }
@@ -25,14 +53,23 @@
   display: flex;
 }
 
-.nav-menu li {
-  padding: 0 1rem;
+nav a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
 }
 
 .nav-menu a {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #333;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+}
+
+nav a:hover {
+  background: green;
+  border: transparent;
+  border-radius: 1rem;
+  transition: 2s;
+  color: #fff;
 }
 
 .hamburger {
@@ -69,7 +106,17 @@
     border-bottom: 1px solid #eee;
   }
 
-  .nav-menu a {
-    font-size: 1.4rem;
+  @keyframes popAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+
+    50% {
+      transform: scale(0.6);
+    }
+
+    100% {
+      transform: scale(0.8);
+    }
   }
 }
