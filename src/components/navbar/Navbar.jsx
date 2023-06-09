@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container">
         <h1>
           Demix
-          <span className="primary">007</span>
+          <span className="primary animated-text">007</span>
         </h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
@@ -28,7 +28,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="btn-group">
-          <button className="btn" type="button">Connect Wallet</button>
+          <button className="btn pop-button" type="button">Connect Wallet</button>
         </div>
         <button className="hamburger" type="button" onClick={handleClick}>
           {click ? (<FaTimes size={30} style={{ color: '#33' }} />) : (<FaBars size={30} style={{ color: '#33' }} />) }
